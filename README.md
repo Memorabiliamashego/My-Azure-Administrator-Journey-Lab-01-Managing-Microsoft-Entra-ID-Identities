@@ -102,15 +102,15 @@ Add-AzureADGroupMember `
 
 ## 📸 Screenshots
 
-| Task                      | Screenshot                                               
+                                            
 
-| User creation in Entra ID |
+## 🧰 User creation in Entra ID 
 
  <img width="1177" height="661" alt="image" src="https://github.com/user-attachments/assets/8c97aee2-6363-4fd2-a8a4-8c6df9c9fe3b" />
  
 ---
 
-| Security group assignment | 
+## 🧰 Security group assignment 
 <img width="1901" height="552" alt="image" src="https://github.com/user-attachments/assets/6dbb8847-b277-4eed-9b4e-0edf983a99a7" />
 
 
