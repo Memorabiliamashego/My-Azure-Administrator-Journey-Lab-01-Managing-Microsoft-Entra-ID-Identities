@@ -111,7 +111,8 @@ Add-AzureADGroupMember `
 ---
 
 ## 🧰 Security group assignment 
-<img width="1901" height="552" alt="image" src="https://github.com/user-attachments/assets/6dbb8847-b277-4eed-9b4e-0edf983a99a7" />
+<img width="1919" height="1135" alt="image" src="https://github.com/user-attachments/assets/810c80f0-88e5-421b-b57a-ea176a51443c" />
+
 
 
 ---
