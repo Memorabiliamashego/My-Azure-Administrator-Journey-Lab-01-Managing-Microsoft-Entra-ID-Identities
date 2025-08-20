@@ -25,9 +25,9 @@ Set up **Microsoft Entra ID** (formerly Azure Active Directory) to manage **user
 ## 🏗️ High-Level Architecture
 
 ![Azure Entra ID Architecture](diagrams/azure-entra-id-architecture.png)
+<img width="1024" height="1024" alt="ChatGPT Image Aug 20, 2025, 10_47_49 AM" src="https://github.com/user-attachments/assets/61503382-5423-405a-8d0c-1fb96d95f48c" />
 
-> 🗒️ *Source file: [`azure-entra-id-architecture.drawio`](diagrams/azure-entra-id-architecture.drawio)*  
-> Open and edit the diagram online using [draw.io](https://app.diagrams.net).
+
 
 ---
 
@@ -74,7 +74,7 @@ New-AzureADGroup `
   -MailEnabled $false `
   -MailNickname "developers" `
   -SecurityEnabled $true
-
+```
 
 ---
 
@@ -84,7 +84,9 @@ New-AzureADGroup `
 Add-AzureADGroupMember `
   -ObjectId "<Group_ObjectID>" `
   -RefObjectId "<User_ObjectID>"
+```
 
+---
 
 ## 🧰 Technologies Used
 
@@ -141,7 +143,5 @@ By completing this lab, I’ve learned how to:
 ## 🧑‍💻 Author
 
 **Mpho Mashego**
-🌐 [LinkedIn](https://www.linkedin.com/) • 🐙 [GitHub](https://github.com/memorabiliamashego)
-
----
+🌐 [LinkedIn](https://www.linkedin.com/) • 🐙 [GitHub](https://github.com/your-username)
 
