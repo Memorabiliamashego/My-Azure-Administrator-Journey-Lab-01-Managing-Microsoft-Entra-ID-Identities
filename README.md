@@ -1,0 +1,175 @@
+Got it 🙂 — I’ll give you a **fully complete** and **ready-to-use** `README.md` that you can **copy-paste directly** into your GitHub repo.
+I’ll make it clean, professional, and Markdown-optimized, with everything structured perfectly.
+
+---
+
+````markdown
+# 🏗️ Azure Home Lab — Microsoft Entra ID (AZ-104 Lab 01)
+
+![Azure](https://img.shields.io/badge/Azure-Administrator-blue)
+![AZ-104](https://img.shields.io/badge/Exam-AZ--104-success)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+This repository documents my **Azure Home Lab** journey while preparing for the **AZ-104: Microsoft Azure Administrator** certification.  
+Each lab focuses on a specific Azure service, combining **hands-on learning**, **automation scripts**, **architecture diagrams**, and **lessons learned**.
+
+---
+
+## 📌 Lab Overview — Microsoft Entra ID
+
+**Objective:**  
+Set up **Microsoft Entra ID** (formerly Azure Active Directory) to manage **users**, **guest access**, and **security groups**.
+
+**Key tasks:**
+- Create and manage users in **Entra ID**
+- Invite external guest users
+- Create security groups and assign members
+- Automate group/user creation using **PowerShell** and **Azure CLI**
+
+---
+
+## 🏗️ High-Level Architecture
+
+![Azure Entra ID Architecture](diagrams/azure-entra-id-architecture.png)
+
+> 🗒️ *Source file: [`azure-entra-id-architecture.drawio`](diagrams/azure-entra-id-architecture.drawio)*  
+> Open and edit the diagram online using [draw.io](https://app.diagrams.net).
+
+---
+
+## ⚙️ Step-by-Step Setup
+
+### **1. Create a Resource Group**
+```bash
+az group create \
+  --name EntraLabRG \
+  --location eastus
+````
+
+### **2. Create Users**
+
+**PowerShell:**
+
+```powershell
+Connect-AzureAD
+New-AzureADUser -DisplayName "John Doe" -PasswordProfile @{Password="P@ssw0rd123"} -UserPrincipalName "john.doe@yourtenant.onmicrosoft.com" -MailNickName "johndoe"
+```
+
+**Azure Portal:**
+Navigate to:
+**Microsoft Entra ID → Users → New User**
+
+---
+
+### **3. Invite Guest Users**
+
+```powershell
+New-AzureADMSInvitation `
+  -InvitedUserEmailAddress "guest.user@example.com" `
+  -SendInvitationMessage $true `
+  -InviteRedirectUrl "https://myapps.microsoft.com"
+```
+
+---
+
+### **4. Create Security Groups**
+
+```powershell
+New-AzureADGroup `
+  -DisplayName "Developers" `
+  -MailEnabled $false `
+  -MailNickname "developers" `
+  -SecurityEnabled $true
+```
+
+---
+
+### **5. Assign Users to Groups**
+
+```powershell
+Add-AzureADGroupMember `
+  -ObjectId "<Group_ObjectID>" `
+  -RefObjectId "<User_ObjectID>"
+```
+
+---
+
+## 🧰 Technologies Used
+
+| Tool / Service         | Purpose                              |
+| ---------------------- | ------------------------------------ |
+| **Azure Portal**       | Manage resources via UI              |
+| **Microsoft Entra ID** | Identity and access management       |
+| **Azure CLI**          | Automate Azure management            |
+| **PowerShell**         | Scripting users, groups, and invites |
+| **draw\.io**           | Architecture diagram creation        |
+| **Markdown**           | Documentation                        |
+
+---
+
+## 📸 Screenshots
+
+| Task                      | Screenshot                                               |
+| ------------------------- | -------------------------------------------------------- |
+| User creation in Entra ID | ![User Creation](screenshots/entra-user-created.png)     |
+| Security group assignment | ![Group Assignment](screenshots/entra-group-members.png) |
+
+---
+
+## 🎯 Learning Outcomes
+
+By completing this lab, I’ve learned how to:
+
+* Set up and manage **Microsoft Entra ID** from scratch
+* Automate **user and group creation** using scripts
+* Invite and manage **guest users** securely
+* Design clean **Azure architecture diagrams**
+* Use **GitHub** to document cloud engineering projects professionally
+
+---
+
+## 🚀 Roadmap
+
+* [x] Lab 01: Microsoft Entra ID — Users & Groups ✅
+* [ ] Lab 02: Role-Based Access Control (RBAC)
+* [ ] Lab 03: Azure Storage Accounts & Access Keys
+* [ ] Lab 04: Azure Networking — VNETs, Subnets, NSGs
+* [ ] Lab 05: Azure Virtual Machines Deployment
+
+---
+
+## 📚 Resources
+
+* [AZ-104 Exam Skills Outline](https://learn.microsoft.com/en-us/certifications/exams/az-104/)
+* [Microsoft Learn — Azure Administrator](https://learn.microsoft.com/en-us/training/courses/az-104t00)
+* [Microsoft Entra ID Docs](https://learn.microsoft.com/en-us/azure/active-directory/)
+
+---
+
+## 🧑‍💻 Author
+
+**Mpho Mashego**
+🌐 [LinkedIn](https://www.linkedin.com/) • 🐙 [GitHub](https://github.com/memorabiliamashego)
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+```
+
+---
+
+### **How to Use This**
+1. Create a new **GitHub repository** called `azure-home-lab`.
+2. Inside the repo:
+   - Create folders:
+     - `diagrams/` → for `.drawio` and `.png` diagrams.
+     - `scripts/` → for PowerShell and Azure CLI scripts.
+     - `screenshots/` → for screenshots.
+3. Paste this `README.md` into the repo root.
+4. Add your architecture diagram `.png` in `diagrams/` and update the link if needed.
+5. Commit and push to GitHub.
