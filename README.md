@@ -24,7 +24,6 @@ Set up **Microsoft Entra ID** (formerly Azure Active Directory) to manage **user
 
 ## 🏗️ High-Level Architecture
 
-![Azure Entra ID Architecture](diagrams/azure-entra-id-architecture.png)
 <img width="1024" height="1024" alt="ChatGPT Image Aug 20, 2025, 10_47_49 AM" src="https://github.com/user-attachments/assets/61503382-5423-405a-8d0c-1fb96d95f48c" />
 
 
@@ -105,10 +104,14 @@ Add-AzureADGroupMember `
 
 | Task                      | Screenshot                                               |
 | ------------------------- | -------------------------------------------------------- |
-| User creation in Entra ID | ![User Creation] <img width="1177" height="661" alt="image" src="https://github.com/user-attachments/assets/8c97aee2-6363-4fd2-a8a4-8c6df9c9fe3b" />
+| User creation in Entra ID |
+
+ <img width="1177" height="661" alt="image" src="https://github.com/user-attachments/assets/8c97aee2-6363-4fd2-a8a4-8c6df9c9fe3b" />
 |
-| Security group assignment | ![Group Assignment]<img width="1901" height="552" alt="image" src="https://github.com/user-attachments/assets/6dbb8847-b277-4eed-9b4e-0edf983a99a7" />
- |
+
+| Security group assignment | 
+<img width="1901" height="552" alt="image" src="https://github.com/user-attachments/assets/6dbb8847-b277-4eed-9b4e-0edf983a99a7" />
+|
 
 ---
 
