@@ -1,9 +1,3 @@
-Got it 🙂 — I’ll give you a **fully complete** and **ready-to-use** `README.md` that you can **copy-paste directly** into your GitHub repo.
-I’ll make it clean, professional, and Markdown-optimized, with everything structured perfectly.
-
----
-
-````markdown
 # 🏗️ Azure Home Lab — Microsoft Entra ID (AZ-104 Lab 01)
 
 ![Azure](https://img.shields.io/badge/Azure-Administrator-blue)
@@ -80,7 +74,7 @@ New-AzureADGroup `
   -MailEnabled $false `
   -MailNickname "developers" `
   -SecurityEnabled $true
-```
+
 
 ---
 
@@ -90,9 +84,7 @@ New-AzureADGroup `
 Add-AzureADGroupMember `
   -ObjectId "<Group_ObjectID>" `
   -RefObjectId "<User_ObjectID>"
-```
 
----
 
 ## 🧰 Technologies Used
 
@@ -153,23 +145,3 @@ By completing this lab, I’ve learned how to:
 
 ---
 
-## 📝 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-```
-
----
-
-### **How to Use This**
-1. Create a new **GitHub repository** called `azure-home-lab`.
-2. Inside the repo:
-   - Create folders:
-     - `diagrams/` → for `.drawio` and `.png` diagrams.
-     - `scripts/` → for PowerShell and Azure CLI scripts.
-     - `screenshots/` → for screenshots.
-3. Paste this `README.md` into the repo root.
-4. Add your architecture diagram `.png` in `diagrams/` and update the link if needed.
-5. Commit and push to GitHub.
